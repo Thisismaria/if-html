@@ -1,3 +1,5 @@
+@import url('./fonts.css');
+
 .offers {
   text-align: center;
 }
@@ -10,10 +12,12 @@
 
 .title-offer {
   color: #383838;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 20px;
+
 }
 .bar {
   width: 100px;
@@ -33,6 +37,7 @@
 }
 
 .icons {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
