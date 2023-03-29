@@ -1,7 +1,11 @@
-@import url('./fonts.css');
+@import url("./fonts.css");
 
+* {
+  margin: 0;
+}
 .offers {
   text-align: center;
+  width: 1440px;
 }
 
 .title {
@@ -12,12 +16,11 @@
 
 .title-offer {
   color: #383838;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   margin-bottom: 20px;
-
 }
 .bar {
   width: 100px;
@@ -37,7 +40,7 @@
 }
 
 .icons {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -48,4 +51,82 @@
 .offers img {
   height: 100px;
   width: 100px;
+}
+
+.footer {
+  background-color: #10367c;
+  width: 1440px;
+  height: 625px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+}
+.container {
+  padding: 120px 272px 64px 105px;
+  width: 1064px;
+  display: flex;
+}
+
+.container .property-type,
+.about,
+.support {
+  padding-top: 0;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul .header {
+  font-weight: 500;
+}
+
+.footer li {
+  margin-bottom: 24px;
+}
+
+.about {
+  width: 193px;
+  height: 211px;
+}
+.about ul {
+  width: 193px;
+  height: 211px;
+}
+
+.property-type {
+  margin-left: 223px;
+  width: 133px;
+  height: 305px;
+}
+
+.property-type ul {
+  width: 133px;
+  height: 305px;
+}
+
+.support {
+  width: 232px;
+  height: 117px;
+  margin-left: 285px;
+}
+.support ul {
+  width: 232px;
+  height: 117px;
+}
+.rights {
+  margin-bottom: 120px;
+  margin-left: 105px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 }
