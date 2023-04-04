@@ -3,9 +3,192 @@
 * {
   margin: 0;
 }
+
+.page {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.welcome {
+  min-height: 100vh;
+  background: url(../images/background.svg);
+  padding: 50px 105px 120px 105px;
+}
+
+.menu {
+  width: 1232px;
+  height: 46px;
+  display: inline-flex;
+}
+
+a {
+  padding-top: 6px;
+  padding-bottom: 12px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.smallbar {
+  width: 50px;
+  height: 0;
+  margin: auto;
+  border: 2px solid #f5bd41;
+  margin-top: 12px;
+}
+
+.link-1 {
+  margin-left: 685px;
+}
+
+.link-2 {
+  margin-left: 24px;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
+  background-image: url(../images/sprite.png);
+}
+
+.day-night {
+  width: 30px;
+  background-image: url(../images/sprite.png);
+  background-position-x: -209px;
+  margin-left: 48px;
+}
+
+.login {
+  width: 40px;
+  background-image: url(../images/sprite.png);
+  background-position-x: -245px;
+  background-position-y: 0;
+  height: 40px;
+  margin-left: 24px;
+}
+.search {
+  width: 1230px;
+  margin-top: 202px;
+  margin-bottom: 120px;
+}
+
+.form {
+  display: flex;
+  margin-top: 24px;
+}
+
+.form input,
+button {
+  border-radius: 8px;
+  border-style: hidden;
+}
+
+.form input {
+  height: 64px;
+  border: 3px solid #f3f3f4;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 24px;
+}
+
+input::placeholder {
+  color: #383838;
+}
+
+.form .first {
+  width: 465px;
+}
+
+.form .second {
+  width: 259px;
+  border: 3px solid #f5bd41;
+  margin-left: -45px;
+}
+.form .third {
+  width: 315px;
+}
+
+.form-title-1,
+.form-title-2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 100px;
+  color: #ffffff;
+}
+
+.form-title-1 {
+  margin-left: 24px;
+  width: 264px;
+  height: 21px;
+}
+
+.form-title-2 {
+  margin-left: 221px;
+  width: 173px;
+  height: 21px;
+}
+
+.form button {
+  width: 192px;
+  margin-left: -50px;
+  background: #3077c6;
+  height: 72px;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.discover {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 100px;
+  color: #ffffff;
+}
+
+.download {
+  display: flex;
+}
+
+.ios {
+  background-image: url(../images/sprite.png);
+  width: 121px;
+  height: 40px;
+  background-position-x: 121px;
+  margin-left: 16px;
+}
+
+.android {
+  background-image: url(../images/sprite.png);
+  width: 135px;
+  height: 40px;
+  background-position-x: 255px;
+  margin-left: 480px;
+}
+
 .offers {
   text-align: center;
-  width: 1440px;
 }
 
 .title {
@@ -55,7 +238,6 @@
 
 .footer {
   background-color: #10367c;
-  width: 1440px;
   height: 625px;
 
   font-family: "Roboto", sans-serif;
