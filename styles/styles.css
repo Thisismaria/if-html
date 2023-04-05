@@ -15,6 +15,13 @@
   background: url(../images/background.svg);
   padding: 50px 105px 120px 105px;
 }
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 
 .menu {
   width: 1232px;
@@ -50,24 +57,20 @@ a {
   margin-left: 24px;
 }
 
-.logo {
+.logo svg {
   width: 205px;
   height: 40px;
-  background-image: url(../images/sprite.png);
 }
 
-.day-night {
+.day-night svg {
   width: 30px;
-  background-image: url(../images/sprite.png);
-  background-position-x: -209px;
+  height: 30px;
+  margin-top: 5px;
   margin-left: 48px;
 }
 
-.login {
+.login svg {
   width: 40px;
-  background-image: url(../images/sprite.png);
-  background-position-x: -245px;
-  background-position-y: 0;
   height: 40px;
   margin-left: 24px;
 }
@@ -171,19 +174,15 @@ input::placeholder {
   display: flex;
 }
 
-.ios {
-  background-image: url(../images/sprite.png);
+.ios svg {
   width: 121px;
   height: 40px;
-  background-position-x: 121px;
   margin-left: 16px;
 }
 
-.android {
-  background-image: url(../images/sprite.png);
+.android svg {
   width: 135px;
   height: 40px;
-  background-position-x: 255px;
   margin-left: 480px;
 }
 
@@ -231,7 +230,7 @@ input::placeholder {
   margin: auto;
 }
 
-.offers img {
+.offers svg {
   height: 100px;
   width: 100px;
 }
