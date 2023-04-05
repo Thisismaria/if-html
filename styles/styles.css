@@ -22,14 +22,13 @@
   height: 0;
 }
 
-
-.menu {
+.welcome__menu {
   width: 1232px;
   height: 46px;
   display: inline-flex;
 }
 
-a {
+.welcome a {
   padding-top: 6px;
   padding-bottom: 12px;
   font-family: "Roboto", sans-serif;
@@ -41,7 +40,7 @@ a {
   color: #ffffff;
 }
 
-.smallbar {
+.welcome__menu--smallbar {
   width: 50px;
   height: 0;
   margin: auto;
@@ -49,52 +48,61 @@ a {
   margin-top: 12px;
 }
 
-.link-1 {
+.welcome__menu--link-1 {
   margin-left: 685px;
 }
 
-.link-2 {
+.welcome__menu--link-2 {
   margin-left: 24px;
 }
 
-.logo svg {
+.welcome__menu--logo svg {
   width: 205px;
   height: 40px;
 }
 
-.day-night svg {
+.welcome__menu--day-night svg {
   width: 30px;
   height: 30px;
   margin-top: 5px;
   margin-left: 48px;
 }
 
-.login svg {
+.welcome__menu--login svg {
   width: 40px;
   height: 40px;
   margin-left: 24px;
 }
-.search {
+.welcome__search {
   width: 1230px;
   margin-top: 202px;
   margin-bottom: 120px;
 }
+.welcome__search--discover {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 100px;
+  color: #ffffff;
+}
 
-.form {
+.welcome__search--form {
   display: flex;
   margin-top: 24px;
 }
 
-.form input,
+.welcome__search--form input,
 button {
   border-radius: 8px;
   border-style: hidden;
 }
 
-.form input {
+.welcome__search--form input {
   height: 64px;
   border: 3px solid #f3f3f4;
-
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -103,25 +111,25 @@ button {
   padding-left: 24px;
 }
 
-input::placeholder {
+.welcome__search input::placeholder {
   color: #383838;
 }
 
-.form .first {
+.welcome__search--form .first {
   width: 465px;
 }
 
-.form .second {
+.welcome__search--form .second {
   width: 259px;
   border: 3px solid #f5bd41;
   margin-left: -45px;
 }
-.form .third {
+.welcome__search--form .third {
   width: 315px;
 }
 
-.form-title-1,
-.form-title-2 {
+.welcome__search--form-title-1,
+.welcome__search--form-title-2 {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -132,19 +140,19 @@ input::placeholder {
   color: #ffffff;
 }
 
-.form-title-1 {
+.welcome__search--form-title-1 {
   margin-left: 24px;
   width: 264px;
   height: 21px;
 }
 
-.form-title-2 {
+.welcome__search--form-title-2 {
   margin-left: 221px;
   width: 173px;
   height: 21px;
 }
 
-.form button {
+.welcome__search--form button {
   width: 192px;
   margin-left: -50px;
   background: #3077c6;
@@ -160,27 +168,17 @@ input::placeholder {
   color: #ffffff;
 }
 
-.discover {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 59px;
-  margin-bottom: 100px;
-  color: #ffffff;
-}
-
-.download {
+.welcome__download {
   display: flex;
 }
 
-.ios svg {
+.welcome__download--ios svg {
   width: 121px;
   height: 40px;
   margin-left: 16px;
 }
 
-.android svg {
+.welcome__download--android svg {
   width: 135px;
   height: 40px;
   margin-left: 480px;
@@ -190,13 +188,13 @@ input::placeholder {
   text-align: center;
 }
 
-.title {
+.offers__title {
   height: 45px;
   width: 305px;
   margin: 120px auto 0;
 }
 
-.title-offer {
+.offers__title--name {
   color: #383838;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -204,7 +202,7 @@ input::placeholder {
   line-height: 47px;
   margin-bottom: 20px;
 }
-.bar {
+.offers__title--bar {
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
@@ -212,7 +210,7 @@ input::placeholder {
   border-style: hidden;
 }
 
-.offers .icons {
+.offers__icons {
   box-sizing: border-box;
   width: 300px;
   height: 180px;
@@ -221,7 +219,7 @@ input::placeholder {
   margin: 80px auto 120px;
 }
 
-.icons {
+.offers__icons--name {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -230,7 +228,7 @@ input::placeholder {
   margin: auto;
 }
 
-.offers svg {
+.offers__icons svg {
   height: 100px;
   width: 100px;
 }
@@ -252,9 +250,9 @@ input::placeholder {
   display: flex;
 }
 
-.container .property-type,
-.about,
-.support {
+.container__property,
+.container__about,
+.container__support {
   padding-top: 0;
 }
 
@@ -264,7 +262,9 @@ input::placeholder {
   padding: 0;
 }
 
-.footer ul .header {
+.container__about--listheader,
+.container__property--listheader,
+.container__support--listheader {
   font-weight: 500;
 }
 
@@ -272,36 +272,36 @@ input::placeholder {
   margin-bottom: 24px;
 }
 
-.about {
+.container__about {
   width: 193px;
   height: 211px;
 }
-.about ul {
+.container__about ul {
   width: 193px;
   height: 211px;
 }
 
-.property-type {
+.container__property {
   margin-left: 223px;
   width: 133px;
   height: 305px;
 }
 
-.property-type ul {
+.container__property ul {
   width: 133px;
   height: 305px;
 }
 
-.support {
+.container__support {
   width: 232px;
   height: 117px;
   margin-left: 285px;
 }
-.support ul {
+.container__support ul {
   width: 232px;
   height: 117px;
 }
-.rights {
+.container__rights {
   margin-bottom: 120px;
   margin-left: 105px;
   font-family: "Roboto", sans-serif;
