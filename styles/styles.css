@@ -48,11 +48,11 @@
   margin-top: 12px;
 }
 
-.welcome__menu--link-1 {
+.welcome__menu--stays {
   margin-left: 685px;
 }
 
-.welcome__menu--link-2 {
+.welcome__menu--attractions {
   margin-left: 24px;
 }
 
@@ -128,8 +128,8 @@ button {
   width: 315px;
 }
 
-.welcome__search--form-title-1,
-.welcome__search--form-title-2 {
+.welcome__search--form-destination,
+.welcome__search--form-dates {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -140,13 +140,13 @@ button {
   color: #ffffff;
 }
 
-.welcome__search--form-title-1 {
+.welcome__search--form-destination {
   margin-left: 24px;
   width: 264px;
   height: 21px;
 }
 
-.welcome__search--form-title-2 {
+.welcome__search--form-dates {
   margin-left: 221px;
   width: 173px;
   height: 21px;
