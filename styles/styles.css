@@ -54,7 +54,7 @@
   width: calc(var(--col-width) * 12);
 }
 .welcome {
-  display: none;
+  /*display: none;*/
   min-height: 100vh;
   background: url(../images/background.svg);
   padding: 50px 105px 120px 105px;
@@ -105,6 +105,10 @@
   height: 40px;
 }
 
+.welcome__menu--hamburger svg {
+  display: none;
+}
+
 .welcome__menu--day-night svg {
   width: 30px;
   height: 30px;
@@ -145,7 +149,7 @@ button {
 
 .welcome__search--form input {
   height: 64px;
-  border: 3px solid #f3f3f4;
+  border: 3px solid white;
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -153,6 +157,8 @@ button {
   font-size: 18px;
   line-height: 21px;
   padding-left: 24px;
+  width: 115px;
+  border-radius: 0;
 }
 
 .welcome__search input::placeholder {
@@ -161,13 +167,26 @@ button {
 
 .welcome__search--form .first {
   width: 465px;
+  background-image: url(../images/loupe.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 1rem;
 }
 
+/*
 .welcome__search--form .second {
   width: 259px;
   border: 3px solid var(--bar-color);
   margin-left: -45px;
+}*/
+
+.welcome__search--form .second {
+  width: 480px;
+  border: 3px solid var(--bar-color);
+  margin-left: -45px;
+  display: flex;
+  margin-top: -3px;
 }
+
 .welcome__search--form .third {
   width: 315px;
 }
@@ -408,6 +427,115 @@ button {
   .offers__icons {
     margin: 90px auto 25px;
   }
+
+  .welcome {
+    width: 1024px;
+    height: 533px;
+    padding: 12px 16px 0 16px;
+    min-height: 90vh;
+  }
+
+  .welcome__menu {
+    width: 24px;
+  }
+
+  .welcome__menu--day-night svg {
+    margin-left: 620px;
+  }
+
+  .welcome__search {
+    margin-top: 41px;
+    height: 260px;
+  }
+
+  .welcome__menu--hamburger svg {
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .welcome__search--form .second {
+    display: flex;
+    margin-left: 0;
+    border: none;
+  }
+
+  .second .checkin,
+  .second .checkout {
+    width: 447px;
+    height: 48px;
+  }
+
+  .second div:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  .welcome__search--form input {
+    padding-left: 30px;
+    border-radius: 8px;
+  }
+
+  .welcome__search--discover {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 35px;
+    margin-bottom: 41px;
+  }
+
+  .welcome__search {
+    margin-top: 105px;
+    height: 260px;
+  }
+
+  .welcome__search span {
+    display: none;
+  }
+
+  .welcome__search--form .first {
+    width: 940px;
+    height: 48px;
+    margin: 8px 8px 10px 8px;
+  }
+
+  .welcome__search--form .second {
+    margin-left: 8px;
+  }
+
+  .welcome__search--form .third {
+    width: 940px;
+    height: 48px;
+    margin: 8px 8px 8px 8px;
+  }
+
+  .welcome__search--form button {
+    width: 978px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+
+  .welcome__search--form {
+    display: block;
+    background-color: #f5bd41;
+    width: 995px;
+  }
+  .welcome__download--android svg {
+    width: 135px;
+    height: 40px;
+    margin-left: 355px;
+  }
+
+  .welcome__download--ios svg,
+  .welcome__download--android svg {
+    margin-top: 141px;
+  }
+
+  .welcome__menu--stays,
+  .welcome__menu--attractions {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .col-sd-1 {
@@ -465,9 +593,114 @@ button {
     margin-bottom: 60px;
     margin-left: 50px;
   }
+
+  .welcome {
+    width: 768px;
+    height: 533px;
+    padding: 12px 16px 0 16px;
+    min-height: 90vh;
+  }
+
+  .welcome__menu--day-night svg {
+    margin-left: 365px;
+  }
+
+  .welcome__search {
+    margin-top: 41px;
+    height: 260px;
+  }
+
+  .welcome__menu--hamburger svg {
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .welcome__search--form .second {
+    display: flex;
+    margin-left: 0;
+    border: none;
+  }
+
+  .second .checkin,
+  .second .checkout {
+    width: 317px;
+    height: 48px;
+  }
+
+  .second div:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  .welcome__search--form input {
+    padding-left: 30px;
+    border-radius: 8px;
+  }
+
+  .welcome__search--discover {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 35px;
+    margin-bottom: 50px;
+  }
+
+  .welcome__search {
+    height: 260px;
+  }
+
+  .welcome__search span {
+    display: none;
+  }
+
+  .welcome__search--form .first {
+    width: 681px;
+    height: 48px;
+    margin: 8px 8px 10px 8px;
+  }
+
+  .welcome__search--form .second {
+    margin-left: 8px;
+  }
+
+  .welcome__search--form .third {
+    width: 681px;
+    height: 48px;
+    margin: 8px 8px 8px 8px;
+  }
+
+  .welcome__search--form button {
+    width: 719px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+
+  .welcome__search--form {
+    display: block;
+    background-color: #f5bd41;
+    width: 737px;
+  }
+  .welcome__download--android svg {
+    width: 135px;
+    height: 40px;
+    margin-left: 229px;
+  }
+
+  .welcome__download--ios svg,
+  .welcome__download--android svg {
+    margin-top: 141px;
+  }
+
+  .welcome__menu--stays,
+  .welcome__menu--attractions {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
+  /*phone*/
   [class*="col-"] {
     width: 100%;
   }
@@ -489,6 +722,110 @@ button {
   .col-sm-6 {
     width: calc(var(--col-width) * 6);
   }
+
+  .welcome {
+    width: 480px;
+    height: 533px;
+    padding: 12px 16px 0 16px;
+    min-height: 76vh;
+  }
+
+  .welcome__search {
+    margin-top: 41px;
+    height: 260px;
+  }
+  .welcome__menu--day-night svg {
+    margin-left: 75px;
+  }
+
+  .welcome__menu--hamburger svg {
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  .welcome__search--form .second {
+    display: flex;
+    margin-left: 0;
+    border: none;
+  }
+
+  .second .checkin,
+  .second .checkout {
+    width: 172px;
+    height: 48px;
+  }
+
+  .second div:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  .welcome__search--form input {
+    padding-left: 30px;
+    border-radius: 8px;
+  }
+
+  .welcome__search--discover {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 35px;
+    margin-bottom: 31px;
+  }
+
+  .welcome__search {
+    height: 260px;
+  }
+
+  .welcome__search span {
+    display: none;
+  }
+
+  .welcome__search--form .first {
+    width: 390px;
+    height: 48px;
+    margin: 8px 8px 10px 8px;
+  }
+
+  .welcome__search--form .second {
+    margin-left: 8px;
+  }
+
+  .welcome__search--form .third {
+    width: 390px;
+    height: 48px;
+    margin: 8px 8px 8px 8px;
+  }
+
+  .welcome__search--form button {
+    width: 428px;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+
+  .welcome__search--form {
+    display: block;
+    background-color: #f5bd41;
+    width: 444px;
+  }
+  .welcome__download--android svg {
+    width: 135px;
+    height: 40px;
+    margin-left: 83px;
+  }
+
+  .welcome__download--ios svg,
+  .welcome__download--android svg {
+    margin-top: 32px;
+  }
+
+  .welcome__menu--stays,
+  .welcome__menu--attractions {
+    display: none;
+  }
+
   .offers__title {
     margin: 24px auto 0;
   }
