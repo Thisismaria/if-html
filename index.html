@@ -68,6 +68,12 @@
           fill="#fff"
         />
       </symbol>
+      <symbol id="hamburger" viewBox="0 0 24 16">
+        <path
+          d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
+          fill="white"
+        />
+      </symbol>
       <symbol id="iosicon" viewBox="0 0 120 40">
         <path
           d="M110.135 0H9.535c-.367 0-.73 0-1.095.002-.306.002-.61.008-.919.013C6.85.023 6.18.082 5.517.192a6.665 6.665 0 0 0-1.9.627A6.438 6.438 0 0 0 .193 5.522a12.993 12.993 0 0 0-.179 2.002c-.01.306-.01.614-.015.92V31.56c.005.31.006.61.015.921.008.671.068 1.34.18 2.002.11.663.32 1.306.624 1.905.303.598.701 1.143 1.179 1.614.473.477 1.019.875 1.618 1.179a6.7 6.7 0 0 0 1.901.63c.663.11 1.333.168 2.004.177.31.007.613.011.919.011.366.002.728.002 1.095.002h100.6c.359 0 .724 0 1.084-.002.304 0 .617-.004.922-.01.67-.01 1.338-.068 2-.178a6.808 6.808 0 0 0 1.908-.63A6.293 6.293 0 0 0 117.666 38a6.405 6.405 0 0 0 1.182-1.614c.302-.6.51-1.242.619-1.905.111-.661.173-1.33.185-2.002.004-.31.004-.61.004-.921.008-.364.008-.725.008-1.094V9.536c0-.366 0-.73-.008-1.092 0-.306 0-.614-.004-.92a13.57 13.57 0 0 0-.185-2.002 6.648 6.648 0 0 0-.619-1.904 6.469 6.469 0 0 0-2.799-2.8 6.77 6.77 0 0 0-1.908-.627c-.661-.11-1.33-.169-2-.176-.305-.005-.618-.011-.922-.013-.36-.002-.725-.002-1.084-.002Z"
@@ -215,7 +221,7 @@
       </symbol>
     </svg>
     <div class="page">
-      <div class="welcome">
+      <div class="welcome col-lg-12 col-md-10 col-sd-12 col-sm-6">
         <header class="welcome__menu">
           <div class="welcome__menu--logo">
             <svg><use href="#logoicon" /></svg>
@@ -230,6 +236,9 @@
           </div>
           <div class="welcome__menu--login">
             <svg><use href="#loginicon" /></svg>
+          </div>
+          <div class="welcome__menu--hamburger">
+            <svg><use href="#hamburger" /></svg>
           </div>
         </header>
         <div class="welcome__search">
@@ -254,7 +263,7 @@
                 />
               </label>
             </div>
-            <div>
+            <!--<div>
               <label>
                 <input
                   class="second"
@@ -263,6 +272,28 @@
                   placeholder="Tue 15 Sept — Sat 19 Sept"
                 />
               </label>
+            </div>-->
+            <div class="second">
+              <div>
+                <label>
+                  <input
+                    class="checkin"
+                    type="text"
+                    name="date"
+                    placeholder="Tue 15 Sept —"
+                  />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input
+                    class="checkout"
+                    type="text"
+                    name="date"
+                    placeholder="Sat 19 Sept"
+                  />
+                </label>
+              </div>
             </div>
             <div>
               <label>
